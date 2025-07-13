@@ -33,19 +33,19 @@ A modern, elegant Android **Contact Management App** built with **Kotlin**, **Je
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure (Vertical View)
 ContactApp1/
-├── presentation/
-│ ├── navigation/ → NavGraph for screen routing
-│ ├── screen/ → Add/Edit & Home screens
-│ ├── utils/ → Custom components (TextField, etc.)
-│ └── ContactViewModel.kt → ViewModel with state & logic
-├── data/
-│ ├── local/ → Room database, DAO, entities
-│ └── repository/ → Data repository layer
-├── ui/
-│ └── theme/ → Theme setup for Compose
-├── BaseApplication.kt → Hilt Application class
-├── MainActivity.kt → Entry point + Splash logic
-└── res/
-└── drawable/ → Icons, splash images, etc.
+presentation/
+navigation/ → NavGraph for screen routing
+screen/ → Add/Edit & Home screens
+utils/ → Custom components (TextField, etc.)
+ContactViewModel.kt → ViewModel with state & logic
+data/
+local/ → Room database, DAO, entities
+repository/ → Data repository layer
+ui/
+theme/ → Theme setup for Compose
+BaseApplication.kt → Hilt Application class
+MainActivity.kt → Entry point + Splash logic
+res/
+drawable/ → Icons, splash images, etc.
