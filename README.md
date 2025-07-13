@@ -1,28 +1,51 @@
-# Contact App (In Progress)
+# 📱 Contact Keeper
 
-This is an Android contact management app built using **Kotlin**, **Jetpack Compose**, **Room Database**, and **MVVM architecture**. It allows users to create, update, and delete contacts with a clean, modern UI and follows best practices in Android development.
+A modern, elegant Android **Contact Management App** built with **Kotlin**, **Jetpack Compose**, **Room**, and **MVVM** architecture. Easily create, view, edit, and delete contacts — all stored locally with a beautiful Material 3 UI.
 
-> 🚧 **Note:** This project is currently under active development. Full code and features will be updated shortly.
-
----
-
-## 📌 Features (Planned)
-- Add, edit, and delete contacts (CRUD operations)
-- Jetpack Compose-based modern UI
-- Local storage with Room Database
-- MVVM architecture for clean separation of concerns
-- Dependency Injection using Dagger Hilt
+> 🚧 This project is actively under development. More features and improvements coming soon!
 
 ---
 
-## 🛠️ Tech Stack
-- **Language:** Kotlin
-- **UI:** Jetpack Compose
-- **Architecture:** MVVM
-- **Database:** Room
-- **Dependency Injection:** Dagger Hilt
-- **IDE:** Android Studio
+## ✨ Features
+
+- ✅ Add, edit, and delete contacts (CRUD operations)
+- ✅ Display contact details: name, phone number, email
+- ✅ Modern UI with **Jetpack Compose** and **Material 3**
+- ✅ Splash screen with custom logo
+- ✅ Room database for persistent local storage
+- ✅ Clean architecture using **MVVM pattern**
+- ✅ **Dagger Hilt** for dependency injection
+- 🚀 Fast performance and smooth navigation
 
 ---
 
-## 📂 Project Structure (Coming Soon)
+## 🧱 Tech Stack
+
+| Layer               | Technology                    |
+|---------------------|-------------------------------|
+| Language            | Kotlin                        |
+| UI Framework        | Jetpack Compose + Material 3  |
+| Architecture        | MVVM                          |
+| Local DB            | Room                          |
+| Dependency Injection| Dagger Hilt                   |
+| Navigation          | Navigation-Compose            |
+| IDE                 | Android Studio                |
+
+---
+
+## 📁 Project Structure
+ContactApp1/
+├── presentation/
+│ ├── navigation/ → NavGraph for screen routing
+│ ├── screen/ → Add/Edit & Home screens
+│ ├── utils/ → Custom components (TextField, etc.)
+│ └── ContactViewModel.kt → ViewModel with state & logic
+├── data/
+│ ├── local/ → Room database, DAO, entities
+│ └── repository/ → Data repository layer
+├── ui/
+│ └── theme/ → Theme setup for Compose
+├── BaseApplication.kt → Hilt Application class
+├── MainActivity.kt → Entry point + Splash logic
+└── res/
+└── drawable/ → Icons, splash images, etc.
